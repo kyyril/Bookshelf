@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1>Bookshelf Apps</h1>
+            </div>
+            <div class="navbar-right">
+                <input id="searchBookTitle" type="text" name="search" placeholder="Judul buku...">
+                <button class="search" id="showSearchButton" type="submit" name="submit"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="input_section">
+            <h2>Tambahkan Buku</h2>
+            <form id="inputbuku">
+                <div class="input">
+                    <label for="tittle">Judul</label>
+                    <input id="tittle" type="text" name="title" required placeholder="Judul Buku..">
+                </div>
+                <div class="input">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" name="author" required placeholder="Nama Author..">
+                </div>
+                <div class="input">
+                    <label for="year">Tahun</label>
+                    <input id="year" type="number" name="year" required placeholder="Masukkan Tahun..">
+                </div>
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai di baca ?</label>
+                    <input class="checkbox" id="inputBookIsComplete" type="checkbox" name="inputBookIsComplete">
+                </div>
+                <button id="submitBuku" type="submit"><span>Submit</span></button>
+            </form>
+        </section>
+        <aside class="asideBook">
+            <section class="book_shelf" id="searchResults">
+                <h2>Pencarian</h2>
+                <ul id="searchResultsList" class="book_list">
+                </ul>
+            </section>
+            <section class="book_shelf">
+                <h2>Belum selesai</h2>
+                <div id="incompleteBookshelfList" class="book_list">
+                </div>
+            </section>
+            <section class="book_shelf">
+                <h2>Selesai dibaca</h2>
+                <div id="completeBookshelfList" class="book_list">
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 kiril.r</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
