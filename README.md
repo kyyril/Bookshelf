@@ -1,2 +1,2 @@
 # Bookshelf
-book shelf app
+Book shelf apps with simple ui
